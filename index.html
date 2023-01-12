@@ -104,10 +104,8 @@
         <section id="resume">
             <h2 class="resume-title">resume</h2>
             <div class="resume">
-                <canvas id="pdf-canvas"></canvas>
-
-                <!-- <iframe src="./assets/images/DanaBuzzee_Resume.pdf" width="100%" height="500px">
-                </iframe> -->
+                <iframe src="./assets/images/DanaBuzzee_Resume.pdf" width="100%" height="500px">
+                </iframe>
                 <!-- <object data="./assets/images/DanaBuzzee_Resume.pdf" type="application/pdf" style="height: 500px;width: 100%"/> -->
 
             </div>
@@ -135,24 +133,7 @@ links.forEach((link) => {
     dropdownMenu.classList.remove('show');
   });
 });
-
-
 </script>
-        
- <script src="./assets/images/DanaBuzzee_Resume.pdf">
-        pdfjsLib.getDocument('./assets/images/DanaBuzzee_Resume.pdf').promise.then(doc => {
-  doc.getPage(1).then(page => {
-    const canvas = document.getElementById('pdf-canvas');
-    const context = canvas.getContext('2d');
-    const viewport = page.getViewport({ scale: 1 });
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-    page.render({
-      canvasContext: context,
-      viewport: viewport
-    });
-  });
-});
-</script>
+      
 </body>
 </html>
