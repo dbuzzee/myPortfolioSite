@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dbuzzee</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 
 </head>
 
@@ -14,8 +14,8 @@
         <nav>
 <!-- The toggle icon (the black heart) -->
 <div class="toggle-icon">
-            <img src="./assets/images/pngtree-pure-black-heart-clip-art-png-image_2795904.png" alt="black heart graphic">
-            </div>
+    <img src="./assets/images/pngtree-pure-black-heart-clip-art-png-image_2795904.png" alt="">
+</div>
 
 <!-- The dropdown menu -->
 <ul class="dropdown-menu">
@@ -43,9 +43,9 @@
                 <p>I am a problem-solver at heart and enjoy the challenge of finding creative solutions to complex problems. I am always looking for new opportunities to learn and grow as a developer, and am excited to work with clients who share my passion for innovation and excellence. If you are looking for a web developer who is dedicated, creative, and down to make cool sites that stand a sea of boring, I would love to work with you - hmu at <a href="mailto: dana.buzzee@gmail.com">dana.buzzee@gmail.com</a> to discuss potential projects or collaborations.</p>
 
                 <div class="socail-links">
-                    <a href="https://github.com/dbuzzee" target="_blank"><img src="./assets/images/icons8-github-50.png" alt="GitHub icon"></a>
-                    <a href="https://www.linkedin.com/in/dana-buzzee-a2653a203/" target="_blank"><img src="./assets/images/icons8-linkedin-50.png " alt="LinkedIn icon"></a>
-                    <a href="https://codepen.io/dbuzzee" target="_blank"><img src="./assets/images/icons8-codepen-50.png" alt="CodePen icon"></a>
+                    <a href="https://github.com/dbuzzee" target="_blank"><img src="./assets/images/icons8-github-50.png"></a>
+                    <a href="https://www.linkedin.com/in/dana-buzzee-a2653a203/" target="_blank"><img src="./assets/images/icons8-linkedin-50.png " alt=""></a>
+                    <a href="https://codepen.io/dbuzzee" target="_blank"><img src="./assets/images/icons8-codepen-50.png" alt=""></a>
                 </div>
     
             </div>
@@ -61,7 +61,7 @@
                         <h3>carolinelichucki.com</h3>
                         <p>artist website</p>
                     </div>
-                    <img src="./assets/images/caroline-lichucki-dot-com.png" alt="">
+                    <img src="./assets/images/caroline-lichucki-dot-com.png">
                     <div class="box-links">
                         <a href="https://carolinelichucki.com/" target="_blank">rendered site</a>
                         <a href="#">peek the code</a>
@@ -106,8 +106,10 @@
         <section id="resume">
             <h2 class="resume-title">resume</h2>
             <div class="resume">
-                <iframe id="myIframe" src="./assets/DanaBuzzee_Resume.pdf" width="100%" height="100%">
-                </iframe>
+                <canvas id="pdf-canvas"></canvas>
+
+                <!-- <iframe src="./assets/images/DanaBuzzee_Resume.pdf" width="100%" height="500px">
+                </iframe> -->
                 <!-- <object data="./assets/images/DanaBuzzee_Resume.pdf" type="application/pdf" style="height: 500px;width: 100%"/> -->
 
             </div>
@@ -119,6 +121,23 @@
 
         <p><a href="mailto: dana.buzzee@gmail.com">dbuzzee 2023</a><p>
     </footer>
+    <script src="path/to/pdf.js">
+
+        pdfjsLib.getDocument('./assets/images/DanaBuzzee_Resume.pdf').promise.then(doc => {
+            doc.getPage(1).then(page => {
+            const canvas = document.getElementById('pdf-canvas');
+            const context = canvas.getContext('2d');
+            const viewport = page.getViewport({ scale: 1 });
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            page.render({
+            canvasContext: context,
+            viewport: viewport
+            });
+        });
+        });   
+    </script>
+    
 <script>
 const toggleIcon = document.querySelector('.toggle-icon');
 const dropdownMenu = document.querySelector('.dropdown-menu');
@@ -135,20 +154,6 @@ links.forEach((link) => {
     dropdownMenu.classList.remove('show');
   });
 });
-
- <script>
-  var iframe = document.getElementById("myIframe");
-  var screenWidth = window.innerWidth;
-  var screenHeight = window.innerHeight;
-
-  if (screenWidth < 768) {
-    iframe.style.width = "90%";
-    iframe.style.height = "80%";
-  } else {
-    iframe.style.width = "600px";
-    iframe.style.height = "400px";
-  }
-</script>
 
 
 </script>
