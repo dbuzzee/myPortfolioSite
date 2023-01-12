@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+<!-- The toggle icon (the black heart) -->
+<div class="toggle-icon"></div>
+
+<!-- The dropdown menu -->
+<ul class="dropdown-menu">
+  <a href="#about"><li>about</li></a>
+  <a href="#portfolio"><li>Portfolio</li></a>
+  <a  href="#resume"><li class="last-child-border">Resume</li></a>
+
+
+</ul>
+</nav>
+</header>
+<div class="center">
+    <div class="headerText">
+<h1>dbuzzee: web developer</h1>
+</div>
+</div>
+    <main>
+        <section  id="about">
+
+            <div class="aboutText">
+                <p>Hi, my name is Dana Buzzee aka dbuzzee (when it comes to my work as a web developer). I am passionate about experimental web design. As a mid-career professional <a href="https://danabuzzee.com" target="_blank">visual artist</a> , I bring a unique perspective to my work, incorporating elements of art and design into my projects, and am always looking for new ways to push the boundaries of what is possible on the web. I am committed to building websites that prioritize accessibility while still allowing for creative, experimental design, prioritizing accessibility in the work I strive to create aesthetic websites that can be experienced holistically with assistive tech (sometimes with greater ease than without).</p>
+
+                <p>I have completed coursework in web development and JavaScript from Juno College of Technology (2022), and hold a BFA from the Alberta College of Art and Design (2012), and an MFA from the University of Oregon (2022). I have ten years of experience as a professional artist, and during my MFA was a Graduate Teaching Fellow at the University of Oregon; among my positions in this role, I was an instructor of record for a 300-level digital imaging Art and Technology course and a lab instructor for two sections of a 200-level Art and Technology Interactivity course that used Java through the processing.org wrap to create digital visual art.</p>
+
+                <p>I am a problem-solver at heart and enjoy the challenge of finding creative solutions to complex problems. I am always looking for new opportunities to learn and grow as a developer, and am excited to work with clients who share my passion for innovation and excellence. If you are looking for a web developer who is dedicated, creative, and down to make cool sites that stand a sea of boring, I would love to work with you - hmu at <a href="mailto: dana.buzzee@gmail.com">dana.buzzee@gmail.com</a> to discuss potential projects or collaborations.</p>
+
+                <div class="socail-links">
+                    <a href="https://github.com/dbuzzee" target="_blank"><img src="./assets/images/icons8-github-50.png"></a>
+                    <a href="https://www.linkedin.com/in/dana-buzzee-a2653a203/" target="_blank"><img src="./assets/images/icons8-linkedin-50.png " alt=""></a>
+                    <a href="https://codepen.io/dbuzzee" target="_blank"><img src="./assets/images/icons8-codepen-50.png" alt=""></a>
+                </div>
+    
+            </div>
+     
+        </section>
+
+        <section id="portfolio">
+            <!-- The gallery container -->
+            <h2 class="portfolio-title">portfolio</h2>
+            <div class="grid-wrapper">
+                <div class="box">
+                    <div class="box-title">
+                        <h3>carolinelichucki.com</h3>
+                        <p>artist website</p>
+                    </div>
+                    <img src="./assets/images/caroline-lichucki-dot-com.png">
+                    <div class="box-links">
+                        <a href="https://carolinelichucki.com/" target="_blank">rendered site</a>
+                        <a href="#">peek the code</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="box-title">
+                        <h3>Shaved Fennel</h3>
+                        <p>gallery website template</p>
+                    </div>
+                    <img src="./assets/images/shaved-fennel-gallery.png">
+                    <div class="box-links">
+                        <a href="https://dbuzzee.github.io/Flexbox-Gallery-Website/" target="_blank">rendered site</a>
+                        <a href="https://github.com/dbuzzee/Flexbox-Gallery-Website" target="_blank">peek the code</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h3>Style Guide</h3>
+                        <p>Responsive Mobile-First Design</p>
+                    </div>
+                    <img src="./assets/images/style-guide.png">
+                    <div class="box-links">
+                        <a href="https://dbuzzee.github.io/Style-Guide-As-Website/" target="_blank">rendered site</a>
+                        <a href="https://github.com/dbuzzee/Style-Guide-As-Website" target="_blank">peek the code</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-title">
+                        <h3>Hypernadir.energy</h3>
+                        <p>Art Project Website</p>
+                    </div><img src="./assets/images/hyper-nadir-dot-energy.png">
+                    <div class="box-links">
+                        <a href="https://hypernadir.energy/" target="_blank">rendered site</a>
+                        <a href="#">peek the code</a>
+                    </div>
+                </div>
+              
+        </section>
+
+        <section id="resume">
+            <h2 class="resume-title">resume</h2>
+            <div class="resume">
+                <iframe src="./assets/images/DanaBuzzee_Resume.pdf" width="100%" height="500px">
+                </iframe>
+                <!-- <object data="./assets/images/DanaBuzzee_Resume.pdf" type="application/pdf" style="height: 500px;width: 100%"/> -->
+
+            </div>
+        </section>
+
+    </main>        
+
+    <footer>
+
+        <p><a href="mailto: dana.buzzee@gmail.com">dbuzzee 2023</a><p>
+    </footer>
+<script>
+const toggleIcon = document.querySelector('.toggle-icon');
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const links = document.querySelectorAll('.dropdown-menu a');
+
+// Show the dropdown when the toggle icon is clicked
+toggleIcon.addEventListener('click', () => {
+  dropdownMenu.classList.toggle('show');
+});
+
+// Close the dropdown when a link is clicked
+links.forEach((link) => {
+    link.addEventListener('click', () => {
+    dropdownMenu.classList.remove('show');
+  });
+});
+
+
+</script>
+</body>
+</html>
