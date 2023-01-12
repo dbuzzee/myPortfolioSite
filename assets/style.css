@@ -15,7 +15,7 @@ html{
 }
 
 body {
-  body {
+
     background: linear-gradient(to bottom, white, #DFFF00);
      background-attachment: fixed;
     background-size: cover;
@@ -28,7 +28,7 @@ body {
   background-size: 100% 100%;
   background-attachment: fixed;
   #DFFF00*/
-}
+
 
 /* Adjust the background position when scrolling occurs */
 /*body.scrolling {
