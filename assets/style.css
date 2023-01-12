@@ -17,7 +17,7 @@ html{
 body {
 
     background: linear-gradient(to bottom, white, #DFFF00);
-     background-attachment: fixed;
+     background-attachment: scroll;
     background-size: cover;
 }
   /*background: linear-gradient(
