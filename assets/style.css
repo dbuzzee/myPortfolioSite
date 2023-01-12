@@ -20,21 +20,22 @@ body {
     background: linear-gradient(to bottom, white, #DFFF00);
      background-attachment: scroll;
     background-size: cover;
+     background-size: 100% 100%;
+    background-attachment: fixed;
 }
   /*background: linear-gradient(
     to bottom,
     white,
     #DFFF00
   );
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  #DFFF00*/
+ 
 
 
 /* Adjust the background position when scrolling occurs */
-/*body.scrolling {
+body.scrolling {
   background-position: 0% -50%;
-}*/
+}
+
 main {
     overflow-y: scroll;
 }
