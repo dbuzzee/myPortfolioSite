@@ -286,11 +286,14 @@ padding-left: 10%;
 }
 
 .resume{
-  width: 90%;
+  width: 98%;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding-bottom:56.25%; 
+  position:relative; 
+  display:block; 
 }
 
 iframe{
@@ -298,6 +301,9 @@ iframe{
   padding: 1rem;
   margin: 0 auto;
   min-width: 298px;
+  position:absolute; 
+  top:0; 
+  left: 0
 }
 
 
