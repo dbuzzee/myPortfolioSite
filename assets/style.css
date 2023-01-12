@@ -55,11 +55,13 @@ nav{
 .toggle-icon {
   cursor: pointer;
   display: inline-block;
+
+  padding: 1rem 0 0 1rem;
+  background: url(myPortfolioSite/assets/images/pngtree-pure-black-heart-clip-art-png-image_2795904.png) center center no-repeat; /* Replace with your own black heart image */
+  background-size: cover;
+  
   width: 40px;
   height: 40px;
-  padding: 1rem 0 0 1rem;
-  background: url(./assets/images/pngtree-pure-black-heart-clip-art-png-image_2795904.png) center center no-repeat; /* Replace with your own black heart image */
-  background-size: cover;
   z-index: 1;
   position: fixed;
 }
