@@ -88,13 +88,9 @@ nav{
   width: 45px;
   height: 45px;
   z-index: 1;
-  position: fixed;
-  display: grid;
 }
 
 .toggle-icon >img{
-  margin: auto;
-  height: 100%;
   width: 100%;
 }
 
