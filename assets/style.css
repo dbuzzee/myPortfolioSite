@@ -7,19 +7,11 @@ html { box-sizing: border-box;}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 
-
 html{
   font-size: 62.5%;
   color: #000;
   font-family: sans-serif;
   cursor: auto;
-}
-
-h2{
-  font-size: 6vw;
-
-  text-transform: uppercase;
-  padding-top: 8rem;
 }
 
 body {
@@ -38,42 +30,72 @@ body.scrolling {
   background-position: 0% -50%;
 }
 
-header{
-  /* height: 100vh; */
+section{
+  margin: 10rem auto;
 }
 
 
+ 
+/* TYPOGRAPHICAL STYLES */
+h1{
+  font-size: 10vw;
+  margin-top: 33rem;
+  line-height: 1.5;
+  font-weight: 800;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 6vw;
+  text-transform: uppercase;
+  padding-top: 8rem;
+}
+
+h3{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  font-size: 1.8rem;
+  padding: 1rem;
+  text-align: justify;
+}
 
 a{
   text-decoration: none;
   color: black
 }
 
-section{
-  margin: 10rem auto;
+a:hover{
+  cursor: pointer ;
 }
 
+
+
+/* NAV STYLES */
 nav{
-  /* width: 90%; */
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 /* Style the toggle icon (the black heart) */
 .toggle-icon {
   cursor: pointer;
   display: inline-block;
-
-  padding: 1rem 0 0 1rem;
-  background: url(myPortfolioSite/assets/images/pngtree-pure-black-heart-clip-art-png-image_2795904.png) center center no-repeat; /* Replace with your own black heart image */
-  background-size: cover;
-  
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   z-index: 1;
   position: fixed;
+  display: grid;
+}
+
+.toggle-icon >img{
+  margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
 /* Style the dropdown menu */
@@ -96,17 +118,22 @@ nav{
   border-top: #000 3px solid;
   border-left: #000 3px solid;
   border-right:#000 3px solid;
-  /* border-bottom: #000 3px solid; */
   display: flex;
   justify-content: center;
   background-color: aqua;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #000;
   transition: background-color 1s ease-in;
 }
+
 .last-child-border{
   border-bottom: 3px solid black;
 }
+
 .dropdown-menu li:hover{
   background-color: lightcyan;
   transition: background-color 1s ease-out;
@@ -116,40 +143,6 @@ nav{
   border-bottom: #000 3px solid;
  }
  
-
-
-.dropdown-menu li{
-  text-decoration: none;
-  font-size: 2rem;
-  text-transform: uppercase;
-  color: #000;
-}
-
-
-
-  /* Style the gallery container */
-  .gallery-container {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
-  }
-
-  /* Style the gallery images */
-  .gallery-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.5s ease-in-out;
-  }
-
-  /* Hide all images except the first one */
-  .gallery-image:not(:first-child) {
-    opacity: 0;
-  }
-
 /* Show the dropdown menu when the toggle icon is clicked */
 .toggle-icon:active + .dropdown-menu {
   display: block;
@@ -168,6 +161,7 @@ nav{
 .dropdown-menu {
   display: none;
 }
+
 .dropdown-menu.show {
   display: block;
 }
@@ -175,6 +169,7 @@ nav{
 .dropdown-menu.show {
   display: block;
 }
+
 
 
 /* HEADER STYLES */
@@ -183,7 +178,6 @@ display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
 align-content: center;
-
 height: 100vh;
 max-height: 700px;
 margin-top: 5rem;
@@ -194,14 +188,7 @@ padding-left: 10%;
   width: 50%;
 }
 
-h1{
-  font-size: 10vw;
-  margin-top: 33rem;
-  line-height: 1.5;
-  font-weight: 800;
-  text-align: left;
-  text-transform: uppercase;
-}
+
 
 /* ABOUT STYLES */
 .aboutText{
@@ -210,19 +197,15 @@ h1{
   padding-top: 8rem;
 }
 
-p{
-  font-size: 1.8rem;
-  padding: 1rem;
-  text-align: justify;
-}
-
 .socail-links{
   display: flex;
   justify-content: space-around;
   margin: 10rem 0;
 }
-/* PORTFOLIO STYLES */
 
+
+
+/* PORTFOLIO STYLES */
 .portfolio-title{
   text-align: right;
   margin-right:5%;
@@ -234,7 +217,6 @@ p{
   margin: 0 auto;
   background-color: #000;
   padding: 2px;
-
 }
 
 .grid-wrapper {
@@ -260,14 +242,6 @@ p{
   flex-direction: column;
   flex-wrap: wrap;
   margin: 2rem 0;
-
-}
-
-.box-title h3{
-  font-size: 2rem;
-  margin: 0;
-  padding: 0;
-  
 }
 
 .box-title > p{
@@ -287,7 +261,6 @@ p{
   color: black;
   padding:2rem 0 0 0;
   text-transform: uppercase;
-  
 }
 
 .box > img {
@@ -295,32 +268,142 @@ p{
   border: #000 solid 2px;
 }
 
+
 /* RESUME STYLES */
 .resume-title{
+  text-align: left;
+  margin-left:5%;
+  margin: 15rem auto 5rem 5%;
+}
 
-    text-align: left;
-    margin-left:5%;
-    margin: 15rem auto 5rem 5%;
+
+
+.resume-html{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 4rem;
+  overflow: auto;
+}
+
+.resume-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.resume-main-header{
+  margin: 0 auto;
+  padding: 0;
+  font-size: 6vw;
+  text-align: center;
+}
+
+.resume-contact-info{
+  max-width: 800px;
+  margin: 10px auto 1rem auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.resume-contact-info> p{
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.resume-contact-info > p, .resume-contact-info >a{
+  font-size: 3vw;
+  color: black;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.resume-section-header{
+  color: #5A5A5A;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: black 1px solid;
+  width: 100%;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.resume-entry{
+  margin-top: 2rem;
+}
+
+.resume-entry-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-entry-header > h5{
+  margin: .5rem 0;
 
 }
 
-.resume{
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
+.resume-entry-text{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  max-width: 70%;
+}
+
+.resume-entry-dates{
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.resume-entry-subheader{
+  margin: 0;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+.resume-entry-list > li{
+  font-size: 1.5rem;
+  text-align: justify;
+  padding-right: 3rem;
+}
+
+.resume-lines-together{
   display: flex;
-  /* justify-content: center; */
-  /* flex-direction: column; */
+  justify-content: space-between;
   align-items: center;
 }
 
-iframe{
-  border: solid black 2px;
-  padding: 1rem;
-  margin: 0 auto;
-  min-width: 298px;
+.resume-lines-together >h5{
+  margin: 0;
 }
 
+.skills-list{
+  padding: 0 3rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.skills-list > li{
+  font-size: 1.4rem;
+  margin: .5rem 2rem;
+  padding-right: 2rem;
+}
+
+
+/* FOOTER STYLES */
 footer{
   height: 30vh;
   display: grid;
@@ -342,14 +425,45 @@ footer p > a:hover{
   color: aqua;
   text-decoration: none;
 }
-a:hover{
-  cursor: pointer ;
 
-}
+
+
+
+
 /* make this shit responsive */
+@media screen and (min-width:350px){
+  .resume{
+    width: 98%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-bottom:56.25%; 
+    border: #000 2px solid;
+    padding: 2rem;
+    overflow: auto;
+  }
+
+  .resume-main-header{
+    font-size: 4vw;
+  }
+}
+
 @media screen and (min-width:700px){
+  .resume-contact-info > p, .resume-contact-info >a{
+    font-size: 2rem;
+  }
+
   .center{
     height: auto;
+  }
+
+  .toggle-icon{
+    margin: 1rem 1.5rem 0 0;
+  }
+
+  .skills-list{
+    flex-direction: row;
   }
 }
 
