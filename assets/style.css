@@ -98,7 +98,7 @@ nav{
 .dropdown-menu {
   display: none;
   position: fixed;
-  top: 5vh;
+  top: 7vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -109,7 +109,7 @@ nav{
 }
 
 .dropdown-menu li{
-  height: calc(85vh / 3);
+  height: calc(80vh / 3);
   text-decoration: none;
   border-top: #000 3px solid;
   border-left: #000 3px solid;
@@ -446,6 +446,14 @@ footer p > a:hover{
 }
 
 @media screen and (min-width:700px){
+    .dropdown-menu {
+    top: 5vh;
+  }
+  
+  .dropdown-menu li{
+    height: calc(85vh / 3);
+  }
+  
   .resume-contact-info > p, .resume-contact-info >a{
     font-size: 2rem;
   }
