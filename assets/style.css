@@ -88,6 +88,7 @@ nav{
   width: 45px;
   height: 45px;
   z-index: 1;
+  position:fixed;
 }
 
 .toggle-icon >img{
@@ -98,7 +99,7 @@ nav{
 .dropdown-menu {
   display: none;
   position: fixed;
-  top: 5vh;
+  top: 10px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -109,7 +110,7 @@ nav{
 }
 
 .dropdown-menu li{
-  height: calc(80vh / 3);
+  height: calc(75vh / 3);
   text-decoration: none;
   border-top: #000 3px solid;
   border-left: #000 3px solid;
