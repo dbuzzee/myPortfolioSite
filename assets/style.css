@@ -89,6 +89,7 @@ nav{
   height: 45px;
   z-index: 1;
   position:relative;
+  display:grid;
 }
 
 .toggle-icon >img{
@@ -110,7 +111,7 @@ nav{
 }
 
 .dropdown-menu li{
-  height: calc(75vh / 3);
+  height: calc(85vh / 3);
   text-decoration: none;
   border-top: #000 3px solid;
   border-left: #000 3px solid;
