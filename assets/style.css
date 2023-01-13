@@ -88,7 +88,7 @@ nav{
   width: 45px;
   height: 45px;
   z-index: 1;
-  position:fixed;
+  position:sticky;
 }
 
 .toggle-icon >img{
@@ -99,7 +99,7 @@ nav{
 .dropdown-menu {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 2px;
   bottom: 0;
   left: 0;
   right: 0;
