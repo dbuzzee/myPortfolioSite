@@ -88,7 +88,7 @@ nav{
   width: 45px;
   height: 45px;
   z-index: 1;
-  position:relative;
+  position:fixed;
   display:grid;
   margin:5px;
 }
