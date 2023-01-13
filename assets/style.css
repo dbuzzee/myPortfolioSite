@@ -90,7 +90,7 @@ nav{
   z-index: 1;
   position:fixed;
   display:grid;
-  margin:5px;
+  margin:1px 5px 0 0;
 }
 
 .toggle-icon >img{
