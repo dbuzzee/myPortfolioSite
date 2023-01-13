@@ -101,7 +101,7 @@ nav{
 .dropdown-menu {
   display: none;
   position: fixed;
-  top: -5px;
+  top: 1px;
   bottom: 0;
   left: 0;
   right: 0;
