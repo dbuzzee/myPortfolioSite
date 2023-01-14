@@ -14,15 +14,8 @@ html{
   cursor: auto;
 }
 
-html:root{
-  background: linear-gradient(
-    to bottom,
-    white,
-    #DFFF00
-  ) no-repeat center center fixed;
-}
 
-/*body {
+body {
   background: linear-gradient(
     to bottom,
     white,
@@ -35,21 +28,6 @@ html:root{
   background-size: cover;
 }
 
-body:before {
-  content: "";
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
-  background: url(photos/2452.jpg) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
 
 /* Adjust the background position when scrolling occurs */
 body.scrolling {
