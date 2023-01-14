@@ -14,7 +14,15 @@ html{
   cursor: auto;
 }
 
-body {
+html:root{
+  background: linear-gradient(
+    to bottom,
+    white,
+    #DFFF00
+  ) no-repeat center center fixed;
+}
+
+/*body {
   background: linear-gradient(
     to bottom,
     white,
@@ -41,7 +49,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 /* Adjust the background position when scrolling occurs */
 body.scrolling {
