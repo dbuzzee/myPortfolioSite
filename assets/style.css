@@ -269,6 +269,10 @@ padding-left: 10%;
   text-transform: uppercase;
 }
 
+.box-links a:nth-child(2) {
+  text-align:right;
+}
+
 .box > img {
   width: 100%;
   border: #000 solid 2px;
@@ -282,8 +286,6 @@ padding-left: 10%;
   margin: 15rem auto 5rem 5%;
    padding-top: 8rem;
 }
-
-
 
 .resume-html{
   display: flex;
