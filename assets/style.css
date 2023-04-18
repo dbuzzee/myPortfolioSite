@@ -234,6 +234,7 @@ padding-left: 10%;
 }
 
 .box {
+  background-color: yellow;
   border: #000 2px solid;;
   padding: 2rem;
   overflow: auto;
@@ -245,11 +246,13 @@ padding-left: 10%;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 2rem 0;
+  text-align:center;
 }
 
 .box-title > p{
   margin: 0;
   padding: 0;
+  text-align:center;
 }
 
 .box-links{
